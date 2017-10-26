@@ -1,0 +1,23 @@
+{
+  "name": "bytearray.ts",
+  "version": "1.0.0",
+  "description": "similar to AS3's bytearray",
+  "main": "dist/ByteArray.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "test": "mocha --require ts-node/register test/**Test.ts",
+    "dev:test": "mocha --inspect-brk=5828 --require ts-node/register test/**Test.ts"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "terran.tian@foxmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.47",
+    "mocha": "^3.5.0",
+    "ts-node": "^3.3.0"
+  },
+  "dependencies": {}
+}

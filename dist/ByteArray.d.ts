@@ -1,0 +1,56 @@
+export declare class ByteArray {
+    private static SIZE_OF_BOOLEAN;
+    private static SIZE_OF_INT8;
+    private static SIZE_OF_INT16;
+    private static SIZE_OF_INT32;
+    private static SIZE_OF_UINT8;
+    private static SIZE_OF_UINT16;
+    private static SIZE_OF_UINT32;
+    private static SIZE_OF_FLOAT32;
+    private static SIZE_OF_FLOAT64;
+    endian: string;
+    constructor(buffer?: ArrayBuffer);
+    readonly buffer: ArrayBuffer;
+    private _data;
+    data: DataView;
+    readonly bufferOffset: number;
+    private _position;
+    position: number;
+    length: number;
+    readonly bytesAvailable: number;
+    clear(): void;
+    readBoolean(): boolean;
+    readByte(): number;
+    readBytes(bytes: ByteArray, offset?: number, length?: number): void;
+    readDouble(): number;
+    readFloat(): number;
+    readInt(): number;
+    readShort(): number;
+    readUnsignedByte(): number;
+    readUnsignedInt(): number;
+    readUnsignedShort(): number;
+    readUTF(): string;
+    readUTFBytes(length: number): string;
+    writeBoolean(value: boolean): void;
+    writeByte(value: number): void;
+    writeBytes(bytes: ByteArray, offset?: number, length?: number): void;
+    writeDouble(value: number): void;
+    writeFloat(value: number): void;
+    writeInt(value: number): void;
+    writeShort(value: number): void;
+    writeUnsignedInt(value: number): void;
+    writeUnsignedShort(value: number): void;
+    writeUTF(value: string): void;
+    writeUTFBytes(value: string): void;
+    toString(): string;
+    writeUint8Array(bytes: Uint8Array): void;
+    getPlatformEndianness(): string;
+    private $setArrayBuffer(buffer);
+    private checkSize(len);
+    private encodeUTF8(str);
+    private decodeUTF8(data);
+}
+export declare class Endian {
+    static LITTLE_ENDIAN: string;
+    static BIG_ENDIAN: string;
+}
