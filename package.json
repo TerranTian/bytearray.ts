@@ -8,6 +8,10 @@
     "test": "mocha --require ts-node/register test/**Test.ts",
     "dev:test": "mocha --inspect-brk=5828 --require ts-node/register test/**Test.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerranTian/bytearray.ts.git"
+  },
   "keywords": [
     "node"
   ],
@@ -19,5 +23,9 @@
     "mocha": "^3.5.0",
     "ts-node": "^3.3.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/TerranTian/bytearray.ts/issues"
+  },
+  "homepage": "https://github.com/TerranTian/bytearray.ts#readme"
 }
