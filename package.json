@@ -21,9 +21,11 @@
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.47",
     "mocha": "^3.5.0",
-    "ts-node": "^3.3.0"
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "bugs": {
     "url": "https://github.com/TerranTian/bytearray.ts/issues"
   },
