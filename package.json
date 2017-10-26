@@ -1,6 +1,6 @@
 {
   "name": "bytearray.ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "similar to AS3's bytearray",
   "main": "dist/ByteArray.js",
   "scripts": {
