@@ -1,6 +1,6 @@
 {
   "name": "bytearray.ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "similar to AS3's bytearray",
   "main": "dist/ByteArray.js",
   "scripts": {
@@ -24,8 +24,7 @@
     "ts-node": "^3.3.0",
     "typescript": "^2.5.3"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "bugs": {
     "url": "https://github.com/TerranTian/bytearray.ts/issues"
   },
